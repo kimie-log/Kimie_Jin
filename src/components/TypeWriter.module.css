@@ -1,0 +1,28 @@
+.title {
+  position: absolute;
+  bottom: 5%;
+  left: 0;
+  padding: 20px 40px;
+  font-size: clamp(3rem, 9vw, 14rem);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  line-height: 1;
+  color: #1c2525;
+  text-align: left;
+}
+
+.subtitle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 20px 40px;
+  font-size: clamp(0.9rem, 1.8vw, 2rem);
+  color: #1c2525;
+  opacity: 0.2;
+  text-align: left;
+}
+
+@media (max-width: 767px) {
+  .title  { padding: 12px 20px; }
+  .subtitle { padding: 12px 20px; }
+}

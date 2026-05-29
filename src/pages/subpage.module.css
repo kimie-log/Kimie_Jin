@@ -1,0 +1,126 @@
+/* ── Shared sub-page styles ── */
+.page {
+  min-height: 100vh;
+  background-color: var(--page-bg);
+  color: var(--page-text, #1c2525);
+}
+
+.slide {
+  display: flex;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 100px 60px 60px;
+  opacity: 0;
+  transform: translateX(-100px);
+  transition: opacity 1s ease-in, transform 1s ease-in;
+}
+
+.slideVisible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* ── Info table ── */
+.infoTable {
+  width: 45%;
+  min-width: 280px;
+  border-collapse: collapse;
+  padding-right: 40px;
+  flex-shrink: 0;
+}
+
+.infoTable th,
+.infoTable td {
+  padding: 10px 8px;
+  vertical-align: top;
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: left;
+  color: inherit;
+}
+
+.infoTable th { font-weight: 700; }
+
+.projectTitle {
+  font-size: 1.8rem !important;
+  line-height: 1.3;
+  padding-bottom: 12px;
+  white-space: pre-line;
+}
+
+.linkBtn {
+  display: inline-block;
+  padding: 6px 16px;
+  border: 1.5px solid currentColor;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  color: inherit;
+  transition: background 0.3s;
+}
+
+.linkBtn:hover { background: rgba(255,255,255,0.2); }
+
+/* ── Image area ── */
+.imgArea {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  min-width: 0;
+}
+
+.imgArea img {
+  width: 100%;
+  max-width: 640px;
+  border-radius: 12px;
+  object-fit: contain;
+}
+
+/* ═══════════════════════════════
+   RWD — Tablet  (≤1199px)
+═══════════════════════════════ */
+@media (max-width: 1199px) {
+  .slide { padding: 90px 40px 40px; }
+
+  .infoTable {
+    width: 40%;
+    min-width: 240px;
+    padding-right: 24px;
+  }
+
+  .infoTable th,
+  .infoTable td { font-size: 0.9rem; }
+
+  .projectTitle { font-size: 1.4rem !important; }
+}
+
+/* ═══════════════════════════════
+   RWD — Mobile  (≤767px)
+═══════════════════════════════ */
+@media (max-width: 767px) {
+  .slide {
+    flex-direction: column;
+    padding: 72px 20px 40px;
+    min-height: unset;
+  }
+
+  .infoTable {
+    width: 100%;
+    min-width: unset;
+    padding-right: 0;
+    margin-bottom: 24px;
+  }
+
+  .infoTable th,
+  .infoTable td { font-size: 0.9rem; }
+
+  .projectTitle { font-size: 1.3rem !important; }
+
+  .imgArea { width: 100%; }
+
+  .imgArea img {
+    max-width: 100%;
+    border-radius: 8px;
+  }
+}
