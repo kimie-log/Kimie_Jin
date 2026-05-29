@@ -2,6 +2,7 @@ import SubNavbar from '../components/SubNavbar'
 import { useSlideIn } from '../components/useSlideIn'
 import shared from './subpage.module.css'
 import styles from './GraphicDesignPage.module.css'
+import B from '../utils/assetUrl'
 
 const projects = [
   {
@@ -14,23 +15,22 @@ const projects = [
       { key: '素材使用', value: '善用公司購買之素材的同時，創作新的圖標與插圖供同事與個人使用' },
       { key: '技術學習', value: '任務結束之餘，製作主管指定作業（包含動態、字體、AI運用設計）' },
     ],
-    images: ['/images/graphic_design/01.png'],
+    images: [`${B}/images/graphic_design/01.png`],
   },
   {
     title: '書籍平面設計',
     rows: [],
-    images: ['/images/graphic_design/02.png'],
+    images: [`${B}/images/graphic_design/02.png`],
   },
   {
     title: '海報與廣告稿',
     rows: [],
-    images: ['/images/graphic_design/03.png'],
+    images: [`${B}/images/graphic_design/03.png`],
   },
 ]
 
 function ProjectSlide({ project, index }) {
   const { ref, visible } = useSlideIn(index === 0)
-
   return (
     <div ref={ref} className={`${shared.slide} ${visible ? shared.slideVisible : ''}`}>
       <table className={shared.infoTable}>
@@ -50,9 +50,7 @@ function ProjectSlide({ project, index }) {
         </tbody>
       </table>
       <div className={shared.imgArea}>
-        {project.images.map((src) => (
-          <img key={src} src={src} alt={project.title} />
-        ))}
+        {project.images.map((src) => <img key={src} src={src} alt={project.title} />)}
       </div>
     </div>
   )

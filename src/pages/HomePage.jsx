@@ -2,14 +2,15 @@ import { useState, useRef, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import TypeWriter from '../components/TypeWriter'
 import styles from './HomePage.module.css'
+import B from '../utils/assetUrl'
 
 const projects = [
-  { path: '/plan',           img1: '/images/homepage/1-1.png', img2: '/images/homepage/1-2.png', label: '視覺規劃',  hoverColor: '#4df2b6' },
-  { path: '/web-design',    img1: '/images/homepage/2-1.png', img2: '/images/homepage/2-2.png', label: '網頁設計',  hoverColor: '#8DA4A4' },
-  { path: '/logo',           img1: '/images/homepage/3-1.png', img2: '/images/homepage/3-2.png', label: 'LOGO設計', hoverColor: '#414141' },
-  { path: '/graphic-design', img1: '/images/homepage/4-1.png', img2: '/images/homepage/4-2.png', label: '平面設計',  hoverColor: '#fff896' },
-  { path: '/font',           img1: '/images/homepage/5-1.png', img2: '/images/homepage/5-2.png', label: '字體設計',  hoverColor: '#ff5500' },
-  { path: '/illu',           img1: '/images/homepage/6-1.png', img2: '/images/homepage/6-2.png', label: '電繪插圖',  hoverColor: '#E43130' },
+  { path: '/plan',           img1: `${B}/images/homepage/1-1.png`, img2: `${B}/images/homepage/1-2.png`, label: '視覺規劃',  hoverColor: '#4df2b6' },
+  { path: '/web-design',    img1: `${B}/images/homepage/2-1.png`, img2: `${B}/images/homepage/2-2.png`, label: '網頁設計',  hoverColor: '#8DA4A4' },
+  { path: '/logo',           img1: `${B}/images/homepage/3-1.png`, img2: `${B}/images/homepage/3-2.png`, label: 'LOGO設計', hoverColor: '#414141' },
+  { path: '/graphic-design', img1: `${B}/images/homepage/4-1.png`, img2: `${B}/images/homepage/4-2.png`, label: '平面設計',  hoverColor: '#fff896' },
+  { path: '/font',           img1: `${B}/images/homepage/5-1.png`, img2: `${B}/images/homepage/5-2.png`, label: '字體設計',  hoverColor: '#ff5500' },
+  { path: '/illu',           img1: `${B}/images/homepage/6-1.png`, img2: `${B}/images/homepage/6-2.png`, label: '電繪插圖',  hoverColor: '#E43130' },
 ]
 
 const resumeCards = [
@@ -90,7 +91,7 @@ function ResumeCard({ card }) {
   if (card.type === 'pic') {
     return (
       <div className={`${styles.cardPic} ${styles.w230}`}>
-        <img src="/images/homepage/大頭照.jpg" alt="JINJIN" />
+        <img src={`${B}/images/homepage/大頭照.jpg`} alt="JINJIN" />
       </div>
     )
   }
@@ -159,12 +160,10 @@ export default function HomePage() {
       </nav>
 
       <div ref={containerRef} className={styles.container}>
-        {/* ── Section 1: Hero ── */}
         <section className={`${styles.section} ${styles.page01}`}>
           <TypeWriter />
         </section>
 
-        {/* ── Section 2: Resume ── */}
         <section className={`${styles.section} ${styles.page02}`}>
           <div className={styles.personal}>
             {resumeCards.map(({ row, cards }) => (
@@ -177,7 +176,6 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* ── Section 3: Projects ── */}
         <section className={`${styles.section} ${styles.page03}`}>
           <div className={styles.block}>
             {projects.map(({ path, img1, img2, label, hoverColor }) => (
@@ -195,7 +193,6 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* ── Section 4: Future ── */}
         <section className={`${styles.section} ${styles.page04}`}>
           <div className={styles.future}>
             {[
