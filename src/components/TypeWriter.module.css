@@ -1,8 +1,11 @@
-.title {
+.heroGroup {
   position: absolute;
   bottom: 5%;
   left: 0;
   padding: 20px 40px;
+}
+
+.title {
   font-size: clamp(3rem, 9vw, 14rem);
   font-family: 'Roboto', sans-serif;
   font-weight: 900;
@@ -12,17 +15,14 @@
 }
 
 .subtitle {
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding: 20px 40px;
   font-size: clamp(0.9rem, 1.8vw, 2rem);
   color: #1c2525;
-  opacity: 0.2;
+  opacity: 0.7;
   text-align: left;
+  margin-top: 6px;
+  letter-spacing: 0.03em;
 }
 
 @media (max-width: 767px) {
-  .title  { padding: 12px 20px; }
-  .subtitle { padding: 12px 20px; }
+  .heroGroup { padding: 12px 20px; }
 }

@@ -55,7 +55,7 @@ function ProjectSlide({ project, index }) {
         </tbody>
       </table>
       <div className={shared.imgArea}>
-        {project.images.map((src) => <img key={src} src={src} alt={project.title} />)}
+        {project.images.map((src) => <img key={src} src={src} alt={project.title} loading="lazy" />)}
       </div>
     </div>
   )

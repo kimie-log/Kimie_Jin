@@ -1,10 +1,10 @@
 import { useState, useEffect } from 'react'
 import styles from './TypeWriter.module.css'
 
-const H1_TEXT = 'As is a tale,\nSo is life.'
-const P_TEXT = 'Not how long it is, but how good it is, is what matters.'
+const H1_TEXT = 'JINJIN'
+const P_TEXT = 'UI/UX Designer & Web Designer'
 const H1_SPEED = 130
-const P_SPEED = 100
+const P_SPEED = 60
 const START_DELAY = 500
 
 export default function TypeWriter() {
@@ -35,20 +35,20 @@ export default function TypeWriter() {
     H1_TEXT.slice(0, h1Count)
       .split('\n')
       .map((line, i) => (
-        <span key={i}>
+        <span key={line || `line-${i}`}>
           {i > 0 && <br />}
           {line}
         </span>
       ))
 
   return (
-    <>
-      <p className={styles.subtitle}>
-        <em>{P_TEXT.slice(0, pCount)}</em>
-      </p>
+    <div className={styles.heroGroup}>
       <h1 className={styles.title}>
         <strong>{renderH1()}</strong>
       </h1>
-    </>
+      <p className={styles.subtitle}>
+        <em>{P_TEXT.slice(0, pCount)}</em>
+      </p>
+    </div>
   )
 }

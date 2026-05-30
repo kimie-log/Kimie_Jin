@@ -4,47 +4,55 @@ import TypeWriter from '../components/TypeWriter';
 import styles from './HomePage.module.css';
 import B from '../utils/assetUrl';
 
+const RESUME_PDF_URL = '#';
+
 const projects = [
     {
         path: '/plan',
         img1: `${B}/images/homepage/1-1.png`,
         img2: `${B}/images/homepage/1-2.png`,
-        label: '視覺規劃',
+        label: 'Visual Planning',
+        labelZh: '視覺規劃',
         hoverColor: '#4df2b6',
     },
     {
         path: '/web-design',
         img1: `${B}/images/homepage/2-1.png`,
         img2: `${B}/images/homepage/2-2.png`,
-        label: '網頁設計',
+        label: 'Web Design',
+        labelZh: '網頁設計',
         hoverColor: '#8DA4A4',
     },
     {
         path: '/logo',
         img1: `${B}/images/homepage/3-1.png`,
         img2: `${B}/images/homepage/3-2.png`,
-        label: 'LOGO設計',
+        label: 'Logo Design',
+        labelZh: 'LOGO 設計',
         hoverColor: '#414141',
     },
     {
         path: '/graphic-design',
         img1: `${B}/images/homepage/4-1.png`,
         img2: `${B}/images/homepage/4-2.png`,
-        label: '平面設計',
+        label: 'Graphic Design',
+        labelZh: '平面設計',
         hoverColor: '#fff896',
     },
     {
         path: '/font',
         img1: `${B}/images/homepage/5-1.png`,
         img2: `${B}/images/homepage/5-2.png`,
-        label: '字體設計',
+        label: 'Typography',
+        labelZh: '字體設計',
         hoverColor: '#ff5500',
     },
     {
         path: '/illu',
         img1: `${B}/images/homepage/6-1.png`,
         img2: `${B}/images/homepage/6-2.png`,
-        label: '電繪插圖',
+        label: 'Illustration',
+        labelZh: '電繪插圖',
         hoverColor: '#E43130',
     },
 ];
@@ -306,11 +314,17 @@ export default function HomePage() {
     return (
         <div className={styles.wrapper}>
             <nav className={styles.nav}>
+                <button
+                    className={styles.navBrand}
+                    onClick={() => scrollTo(0)}
+                >
+                    JINJIN
+                </button>
                 <ul>
                     {[
-                        { label: 'About JINJIN', idx: 0 },
-                        { label: 'Design Project', idx: 2 },
-                        { label: 'Future Plan', idx: 3 },
+                        { label: 'About', idx: 0 },
+                        { label: 'Projects', idx: 2 },
+                        { label: 'Goals', idx: 3 },
                     ].map(({ label, idx }) => (
                         <li
                             key={label}
@@ -336,6 +350,28 @@ export default function HomePage() {
 
                 <section className={`${styles.section} ${styles.page02}`}>
                     <div className={styles.personal}>
+                        <div className={styles.resumeHeader}>
+                            <div>
+                                <h2 className={styles.resumeHeading}>金思緯 · JINJIN</h2>
+                                <p className={styles.resumeSubheading}>UI/UX Designer &amp; Web Designer</p>
+                            </div>
+                            <div className={styles.ctaButtons}>
+                                <a
+                                    href={RESUME_PDF_URL}
+                                    className={styles.ctaPrimary}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    下載履歷 PDF
+                                </a>
+                                <a
+                                    href="mailto:szweiforwork@gmail.com"
+                                    className={styles.ctaSecondary}
+                                >
+                                    聯絡我
+                                </a>
+                            </div>
+                        </div>
                         {resumeCards.map(({ row, cards }) => (
                             <div
                                 key={row}
@@ -355,7 +391,7 @@ export default function HomePage() {
                 <section className={`${styles.section} ${styles.page03}`}>
                     <div className={styles.block}>
                         {projects.map(
-                            ({ path, img1, img2, label, hoverColor }) => (
+                            ({ path, img1, img2, label, labelZh, hoverColor }) => (
                                 <Link
                                     key={path}
                                     to={path}
@@ -364,16 +400,19 @@ export default function HomePage() {
                                 >
                                     <img
                                         src={img1}
-                                        alt={label}
+                                        alt={`${label} portfolio preview`}
                                         className={styles.imgDefault}
+                                        loading="lazy"
                                     />
                                     <img
                                         src={img2}
-                                        alt={label}
+                                        alt={`${label} portfolio detail`}
                                         className={styles.imgHover}
+                                        loading="lazy"
                                     />
                                     <p className={styles.projectLabel}>
-                                        {label}
+                                        <span className={styles.projectLabelEn}>{label}</span>
+                                        <span className={styles.projectLabelZh}>{labelZh}</span>
                                     </p>
                                 </Link>
                             )
@@ -386,61 +425,64 @@ export default function HomePage() {
                         {[
                             {
                                 cls: styles.futureMe,
-                                title: 'Personal',
+                                title: 'Design Philosophy',
                                 items: [
                                     {
-                                        h: '上班交通',
+                                        h: '設計理念',
                                         list: [
-                                            '機車、捷運從內湖通勤至公司',
-                                            '9月底搬至公司附近',
+                                            '以使用者體驗為核心出發',
+                                            '整合視覺美感與資訊架構',
+                                            '相信好設計能解決真實問題',
                                         ],
                                     },
                                     {
-                                        h: '健康',
+                                        h: '工作特質',
                                         list: [
-                                            '無任何身心疾病（已體檢）',
-                                            '每週上健身房3-4次 保持體力及精神耐力',
+                                            '主動積極、快速學習新知',
+                                            '重視跨部門溝通與協作',
+                                            '細心、高效率產出設計稿',
                                         ],
                                     },
                                 ],
                             },
                             {
                                 cls: styles.futureWork,
-                                title: 'Work',
+                                title: 'Career Goals',
                                 items: [
                                     {
-                                        h: '專業進修',
+                                        h: '短期目標（1–2 年）',
                                         list: [
-                                            '參加職訓局的設計、程式相關在職課程',
-                                            '任務之餘時間向同事請教工作可改進之處',
+                                            '在設計工作中積累實戰經驗',
+                                            '深化 UX 研究與資訊架構能力',
+                                            '強化前端開發能力輔助設計落地',
                                         ],
                                     },
                                     {
-                                        h: '未來規劃',
+                                        h: '長期目標（3–5 年）',
                                         list: [
-                                            '1-2年：累計工作經驗，提升專業能力',
-                                            '3-5年：專案管理學習、建立人脈',
-                                            '6-10年：成為領域專業人士',
+                                            '獨立操盤完整設計專案',
+                                            '成為跨領域設計領域專才',
+                                            '建立業界人脈與設計影響力',
                                         ],
                                     },
                                 ],
                             },
                             {
                                 cls: styles.futureDesign,
-                                title: 'Design',
+                                title: 'Continuous Learning',
                                 items: [
                                     {
                                         h: '設計進修',
                                         list: [
-                                            '休假日趨勢學習及製作side project',
+                                            '休假日趨勢學習及製作 Side Project',
                                             '設計思考：產品規劃講座、課程參與',
                                         ],
                                     },
                                     {
-                                        h: '新技術、設計趨勢',
+                                        h: '新技術探索',
                                         list: [
-                                            '定期瀏覽新文章、保持新知識吸收',
-                                            '確保每次專案能有新想法與嘗試性製作',
+                                            '定期瀏覽設計趨勢、保持新知吸收',
+                                            '每次專案融入新想法與實驗性製作',
                                         ],
                                     },
                                 ],
