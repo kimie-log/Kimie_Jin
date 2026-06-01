@@ -8,8 +8,8 @@ export const CATEGORIES = [
         accentBg: '#3ec795',
         accentText: '#1c2525',
         hoverColor: '#4df2b6',
-        img1: `${B}/images/homepage/1-1.png`,
-        img2: `${B}/images/homepage/1-2.png`,
+        img1: `${B}/images/homepage/1-1.webp`,
+        img2: `${B}/images/homepage/1-2.webp`,
         projects: [
             {
                 title: '視覺規劃',
@@ -19,7 +19,7 @@ export const CATEGORIES = [
                     { key: '3', value: '製作Wireframes' },
                     { key: '4', value: '設計稿製作及原型產出' },
                 ],
-                images: [`${B}/images/plan/01.png`],
+                images: [`${B}/images/plan/01.webp`],
             },
             {
                 title: '網頁規劃',
@@ -33,7 +33,7 @@ export const CATEGORIES = [
                         value: '製作網站架構表\n包含區塊名稱、產品內容、圖片/網站連結及class/id名稱',
                     },
                 ],
-                images: [`${B}/images/plan/02.png`],
+                images: [`${B}/images/plan/02.webp`],
             },
             {
                 title: '行銷企劃',
@@ -45,7 +45,7 @@ export const CATEGORIES = [
                         value: '企劃成本、預算分配、各項活動所需之詳細內容：\n宣傳網站、地點、視覺設計、活動行程',
                     },
                 ],
-                images: [`${B}/images/plan/03.png`],
+                images: [`${B}/images/plan/03.webp`],
             },
         ],
     },
@@ -56,8 +56,8 @@ export const CATEGORIES = [
         accentBg: '#738d8d',
         accentText: '#ffffff',
         hoverColor: '#8DA4A4',
-        img1: `${B}/images/homepage/2-1.png`,
-        img2: `${B}/images/homepage/2-2.png`,
+        img1: `${B}/images/homepage/2-1.webp`,
+        img2: `${B}/images/homepage/2-2.webp`,
         projects: [
             {
                 title: '活動網頁設計與切版',
@@ -73,7 +73,7 @@ export const CATEGORIES = [
                     },
                     { key: '視覺主題', value: '夏日海灘、海洋素材電繪' },
                 ],
-                images: [`${B}/images/web_design/A-01.png`],
+                images: [`${B}/images/web_design/A-01.webp`],
             },
             {
                 title: 'C端網站設計',
@@ -90,11 +90,11 @@ export const CATEGORIES = [
                     },
                 ],
                 images: [
-                    `${B}/images/web_design/B-01.png`,
-                    `${B}/images/web_design/B-02.png`,
-                    `${B}/images/web_design/B-03.png`,
-                    `${B}/images/web_design/B-04.png`,
-                    `${B}/images/web_design/B-05.png`,
+                    `${B}/images/web_design/B-01.webp`,
+                    `${B}/images/web_design/B-02.webp`,
+                    `${B}/images/web_design/B-03.webp`,
+                    `${B}/images/web_design/B-04.webp`,
+                    `${B}/images/web_design/B-05.webp`,
                 ],
             },
             {
@@ -108,10 +108,10 @@ export const CATEGORIES = [
                     },
                 ],
                 images: [
-                    `${B}/images/web_design/C-01.png`,
-                    `${B}/images/web_design/C-02.png`,
-                    `${B}/images/web_design/C-03.jpg`,
-                    `${B}/images/web_design/C-04.png`,
+                    `${B}/images/web_design/C-01.webp`,
+                    `${B}/images/web_design/C-02.webp`,
+                    `${B}/images/web_design/C-03.webp`,
+                    `${B}/images/web_design/C-04.webp`,
                 ],
             },
             {
@@ -127,7 +127,7 @@ export const CATEGORIES = [
                         value: '1. 活動資訊彙整\n2. 資訊層級排列（優先重點調整）\n3. 設計排版\n4. 整體調整\n5. code切版（RWD）',
                     },
                 ],
-                images: [`${B}/images/web_design/D-01.png`],
+                images: [`${B}/images/web_design/D-01.webp`],
             },
         ],
     },
@@ -138,8 +138,8 @@ export const CATEGORIES = [
         accentBg: '#313131',
         accentText: '#ffffff',
         hoverColor: '#414141',
-        img1: `${B}/images/homepage/3-1.png`,
-        img2: `${B}/images/homepage/3-2.png`,
+        img1: `${B}/images/homepage/3-1.webp`,
+        img2: `${B}/images/homepage/3-2.webp`,
         projects: [
             {
                 title: '逐浪設計\nSWELLS Design',
@@ -151,7 +151,7 @@ export const CATEGORIES = [
                         value: '出自台東，以自然永恆為出發點，打造民宿露營、咖啡廳等業主\n想根據在地空間打造自己的設計工作室\n以（永恆、無限、海浪、身份）為關鍵字進行設計',
                     },
                 ],
-                images: [`${B}/images/LOGO/01.png`],
+                images: [`${B}/images/LOGO/01.webp`],
             },
             {
                 title: 'MROZEN',
@@ -167,7 +167,7 @@ export const CATEGORIES = [
                         value: '美式風格為主題創作\nMrozen來自台灣，以主打盒裝冰淇淋以及禮盒為重點\n使用鮮豔色彩，打造新品牌的活力感',
                     },
                 ],
-                images: [`${B}/images/LOGO/02.png`],
+                images: [`${B}/images/LOGO/02.webp`],
             },
             {
                 title: 'Renees notes world',
@@ -183,7 +183,7 @@ export const CATEGORIES = [
                         value: '以左至右，分別用不同主題色代表各領域的知識：\n設計 ｜ UIUX/網頁 ｜ 食譜 ｜ 語言 ｜ 電影/音樂/書籍',
                     },
                 ],
-                images: [`${B}/images/LOGO/03.png`],
+                images: [`${B}/images/LOGO/03.webp`],
             },
             {
                 title: 'Clown Skull',
@@ -204,8 +204,8 @@ export const CATEGORIES = [
                     },
                 ],
                 images: [
-                    `${B}/images/LOGO/04.png`,
-                    `${B}/images/LOGO/clown_skull.gif`,
+                    `${B}/images/LOGO/04.webp`,
+                    `${B}/images/LOGO/clown_skull.webp`,
                 ],
             },
             {
@@ -222,7 +222,7 @@ export const CATEGORIES = [
                         value: '為因應現今快、狠、準的飲食習慣\n打造可快速加熱的食材包產品，並使用新鮮保存販售方式',
                     },
                 ],
-                images: [`${B}/images/LOGO/05.png`],
+                images: [`${B}/images/LOGO/05.webp`],
             },
             {
                 title: '尚讚農遊',
@@ -234,7 +234,7 @@ export const CATEGORIES = [
                         value: 'Logo的圖樣以「尚」的字型和「讚」的圖形表達做結合\n中間的口部用代表農夫的草帽，以及左上角用新苗的圖形融合\n帶出農遊企業的主視覺',
                     },
                 ],
-                images: [`${B}/images/LOGO/06.png`],
+                images: [`${B}/images/LOGO/06.webp`],
             },
             {
                 title: '職人',
@@ -246,7 +246,7 @@ export const CATEGORIES = [
                         value: '以中文字「職人」字形作出發點\n將斜線以較粗的方式呈現，表現跳舞時手腳伸展的樣貌\n並且職人二字是專業、俐落、精準的感受 — 故以線條作為重點發展',
                     },
                 ],
-                images: [`${B}/images/LOGO/07.png`],
+                images: [`${B}/images/LOGO/07.webp`],
             },
             {
                 title: '猴哩餃',
@@ -258,7 +258,7 @@ export const CATEGORIES = [
                         value: '結合猴子與餃子的外型\n讓顧客一眼看到帶了廚師帽的可愛猴子\n體現活潑可愛的品牌形象',
                     },
                 ],
-                images: [`${B}/images/LOGO/08.png`],
+                images: [`${B}/images/LOGO/08.webp`],
             },
             {
                 title: 'Kavalan wave',
@@ -270,7 +270,7 @@ export const CATEGORIES = [
                         value: '因老闆為台東原住民（排灣族）於是\n使用文化代表的菱形紋加上海浪的波動\n設計出品牌新一季的視覺Logo',
                     },
                 ],
-                images: [`${B}/images/LOGO/09.png`],
+                images: [`${B}/images/LOGO/09.webp`],
             },
         ],
     },
@@ -281,8 +281,8 @@ export const CATEGORIES = [
         accentBg: '#cdc55d',
         accentText: '#1c2525',
         hoverColor: '#fff896',
-        img1: `${B}/images/homepage/4-1.png`,
-        img2: `${B}/images/homepage/4-2.png`,
+        img1: `${B}/images/homepage/4-1.webp`,
+        img2: `${B}/images/homepage/4-2.webp`,
         projects: [
             {
                 title: '資訊圖表',
@@ -306,17 +306,17 @@ export const CATEGORIES = [
                         value: '任務結束之餘，製作主管指定作業（包含動態、字體、AI運用設計）',
                     },
                 ],
-                images: [`${B}/images/graphic_design/01.png`],
+                images: [`${B}/images/graphic_design/01.webp`],
             },
             {
                 title: '書籍平面設計',
                 rows: [],
-                images: [`${B}/images/graphic_design/02.png`],
+                images: [`${B}/images/graphic_design/02.webp`],
             },
             {
                 title: '海報與廣告稿',
                 rows: [],
-                images: [`${B}/images/graphic_design/03.png`],
+                images: [`${B}/images/graphic_design/03.webp`],
             },
         ],
     },
@@ -327,28 +327,28 @@ export const CATEGORIES = [
         accentBg: '#c84605',
         accentText: '#ffffff',
         hoverColor: '#ff5500',
-        img1: `${B}/images/homepage/5-1.png`,
-        img2: `${B}/images/homepage/5-2.png`,
+        img1: `${B}/images/homepage/5-1.webp`,
+        img2: `${B}/images/homepage/5-2.webp`,
         projects: [
             {
                 title: '活動海報字體設計',
                 rows: [],
-                images: [`${B}/images/font/01.png`],
+                images: [`${B}/images/font/01.webp`],
             },
             {
                 title: 'LOGO字體設計',
                 rows: [],
-                images: [`${B}/images/font/02.png`],
+                images: [`${B}/images/font/02.webp`],
             },
             {
                 title: '文創藝術字體設計',
                 rows: [],
-                images: [`${B}/images/font/03.png`],
+                images: [`${B}/images/font/03.webp`],
             },
             {
                 title: '貼文字體設計',
                 rows: [],
-                images: [`${B}/images/font/04.png`],
+                images: [`${B}/images/font/04.webp`],
             },
         ],
     },
@@ -359,8 +359,8 @@ export const CATEGORIES = [
         accentBg: '#b12a2a',
         accentText: '#ffffff',
         hoverColor: '#E43130',
-        img1: `${B}/images/homepage/6-1.png`,
-        img2: `${B}/images/homepage/6-2.png`,
+        img1: `${B}/images/homepage/6-1.webp`,
+        img2: `${B}/images/homepage/6-2.webp`,
         projects: [
             {
                 title: '簡約風格插畫',
@@ -369,10 +369,10 @@ export const CATEGORIES = [
                     { key: '關鍵字', value: '線條、圖塊、仙人掌、連結' },
                 ],
                 images: [
-                    `${B}/images/illu/A-01.png`,
-                    `${B}/images/illu/A-02.png`,
-                    `${B}/images/illu/A-03.png`,
-                    `${B}/images/illu/A-04.png`,
+                    `${B}/images/illu/A-01.webp`,
+                    `${B}/images/illu/A-02.webp`,
+                    `${B}/images/illu/A-03.webp`,
+                    `${B}/images/illu/A-04.webp`,
                 ],
             },
             {
@@ -382,10 +382,10 @@ export const CATEGORIES = [
                     { key: '關鍵字', value: '貓貓狗狗、花朵、活潑、正向' },
                 ],
                 images: [
-                    `${B}/images/illu/A-05.png`,
-                    `${B}/images/illu/A-06.png`,
-                    `${B}/images/illu/A-07.png`,
-                    `${B}/images/illu/A-08.png`,
+                    `${B}/images/illu/A-05.webp`,
+                    `${B}/images/illu/A-06.webp`,
+                    `${B}/images/illu/A-07.webp`,
+                    `${B}/images/illu/A-08.webp`,
                 ],
             },
             {
@@ -395,11 +395,11 @@ export const CATEGORIES = [
                     { key: '關鍵字', value: '魔法、手繪、動畫腳本' },
                 ],
                 images: [
-                    `${B}/images/illu/B-01.png`,
-                    `${B}/images/illu/B-02.jpg`,
-                    `${B}/images/illu/B-03.jpg`,
-                    `${B}/images/illu/B-04.png`,
-                    `${B}/images/illu/B-05.jpg`,
+                    `${B}/images/illu/B-01.webp`,
+                    `${B}/images/illu/B-02.webp`,
+                    `${B}/images/illu/B-03.webp`,
+                    `${B}/images/illu/B-04.webp`,
+                    `${B}/images/illu/B-05.webp`,
                 ],
             },
         ],

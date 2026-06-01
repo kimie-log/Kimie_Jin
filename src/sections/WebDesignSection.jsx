@@ -12,7 +12,7 @@ const projects = [
       { key: '製作軟體、技術', value: 'Figma / Illustrator / Photoshop / HTML / CSS（RWD） / Javascript' },
       { key: '視覺主題', value: '夏日海灘、海洋素材電繪' },
     ],
-    images: [`${B}/images/web_design/02.png`],
+    images: [`${B}/images/web_design/02.webp`],
   },
   {
     title: 'C端網站設計',
@@ -23,11 +23,11 @@ const projects = [
       { key: '設計流程', value: '1. 分析各大旅遊業者官方網站資訊架構\n2. 整理優缺點、統整網站資訊架構表\n3. 互動模式設計（登入/註冊、購物車、收藏、分享、訂購頁面互動）\n4. wireframe製作與修改\n5. 視覺規格表制定與模型製作' },
     ],
     images: [
-      `${B}/images/web_design/03-1.png`,
-      `${B}/images/web_design/03-2.png`,
-      `${B}/images/web_design/04.png`,
-      `${B}/images/web_design/05.png`,
-      `${B}/images/web_design/06.png`,
+      `${B}/images/web_design/03-1.webp`,
+      `${B}/images/web_design/03-2.webp`,
+      `${B}/images/web_design/04.webp`,
+      `${B}/images/web_design/05.webp`,
+      `${B}/images/web_design/06.webp`,
     ],
   },
   {
@@ -38,10 +38,10 @@ const projects = [
       { key: '設計流程', value: '1. 原網站資訊架構與層級排列分析\n2. 調整網站層級架構\n3. 視覺排版wireframe製作（RWD）\n4. 色彩系統與圖標設計\n5. 視覺規格表制定與模型製作' },
     ],
     images: [
-      `${B}/images/web_design/07.png`,
-      `${B}/images/web_design/08.png`,
-      `${B}/images/web_design/09-1.png`,
-      `${B}/images/web_design/09-2.png`,
+      `${B}/images/web_design/07.webp`,
+      `${B}/images/web_design/08.webp`,
+      `${B}/images/web_design/09-1.webp`,
+      `${B}/images/web_design/09-2.webp`,
     ],
   },
 ]

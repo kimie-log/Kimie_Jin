@@ -1,38 +1,71 @@
 export const SKILL_TAGS = [
     {
+        category: 'UX',
+        color: '#ffffff',
+        tags: [
+            '使用者研究',
+            '人物誌',
+            '使用者旅程地圖',
+            '競品分析',
+            '數據分析',
+            '資訊架構',
+            '功能地圖',
+            '使用者流程',
+            '使用者測試',
+            '產品思維',
+            '簡報溝通',
+        ],
+    },
+    {
+        category: 'UI',
+        color: '#ffffff',
+        tags: [
+            '線框圖',
+            '設計原則',
+            '設計系統',
+            '介面設計',
+            '無障礙設計',
+            '平台規範',
+            '原型製作',
+            '微互動',
+            '設計交付',
+            '前端基礎',
+        ],
+    },
+    {
         category: '設計工具',
-        color: '#f0a1c8',
+        color: '#ffffff',
         tags: [
             'Figma',
             'Illustrator',
             'Photoshop',
             'Remotion',
             'hyperframes',
-            'Adove Premiere',
+            'Adobe Premiere',
         ],
     },
     {
-        category: '前端測試工具',
-        color: '#fbb5b5',
-        tags: ['Webpack', 'Vite', 'Cypress', 'Jest', 'Playwright'],
-    },
-    {
         category: '前端',
-        color: '#a1d8f0',
+        color: '#ffffff',
         tags: [
             'React',
             'TypeScript',
             'JavaScript',
-            'jQuery',
             'HTML',
             'CSS / SCSS',
             'Tailwind CSS',
             'RWD',
+            'shadcn/ui',
         ],
     },
     {
+        category: '前端打包 & 測試',
+        color: '#ffffff',
+        tags: ['Vite', 'Webpack', 'Jest', 'Cypress', 'Playwright'],
+    },
+    {
         category: '後端',
-        color: '#a1f0c3',
+        color: '#ffffff',
         tags: [
             'Python',
             'Node.js',
@@ -45,7 +78,7 @@ export const SKILL_TAGS = [
 
     {
         category: '資料 & AI',
-        color: '#c3a1f0',
+        color: '#ffffff',
         tags: [
             'Pandas',
             'NumPy',
@@ -62,12 +95,12 @@ export const SKILL_TAGS = [
     },
     {
         category: '資料庫',
-        color: '#f0c3a1',
+        color: '#ffffff',
         tags: ['PostgreSQL', 'MySQL', 'BigQuery', 'MSSQL'],
     },
     {
         category: '部署 & 雲端',
-        color: '#f0eca1',
+        color: '#ffffff',
         tags: [
             'Docker',
             'Docker Compose',

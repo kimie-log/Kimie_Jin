@@ -14,17 +14,17 @@ const projects = [
       { key: '素材使用', value: '善用公司購買之素材的同時，創作新的圖標與插圖供同事與個人使用' },
       { key: '技術學習', value: '任務結束之餘，製作主管指定作業（包含動態、字體、AI運用設計）' },
     ],
-    images: [`${B}/images/graphic_design/01.png`],
+    images: [`${B}/images/graphic_design/01.webp`],
   },
   {
     title: '書籍平面設計',
     rows: [],
-    images: [`${B}/images/graphic_design/02.png`],
+    images: [`${B}/images/graphic_design/02.webp`],
   },
   {
     title: '海報與廣告稿',
     rows: [],
-    images: [`${B}/images/graphic_design/03.png`],
+    images: [`${B}/images/graphic_design/03.webp`],
   },
 ]
 

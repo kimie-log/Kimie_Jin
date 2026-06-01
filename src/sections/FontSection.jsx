@@ -4,10 +4,10 @@ import styles from './HomeSection.module.css'
 import B from '../utils/assetUrl'
 
 const projects = [
-  { title: '活動海報字體設計', rows: [], images: [`${B}/images/font/01.png`] },
-  { title: 'LOGO字體設計',     rows: [], images: [`${B}/images/font/02.png`] },
-  { title: '文創藝術字體設計', rows: [], images: [`${B}/images/font/03.png`] },
-  { title: '貼文字體設計',     rows: [], images: [`${B}/images/font/04.png`] },
+  { title: '活動海報字體設計', rows: [], images: [`${B}/images/font/01.webp`] },
+  { title: 'LOGO字體設計',     rows: [], images: [`${B}/images/font/02.webp`] },
+  { title: '文創藝術字體設計', rows: [], images: [`${B}/images/font/03.webp`] },
+  { title: '貼文字體設計',     rows: [], images: [`${B}/images/font/04.webp`] },
 ]
 
 function ProjectSlide({ project, index }) {

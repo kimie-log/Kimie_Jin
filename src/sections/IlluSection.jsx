@@ -10,7 +10,7 @@ const projects = [
       { key: '主題', value: 'Love yourself' },
       { key: '關鍵字', value: '線條、圖塊、仙人掌、連結' },
     ],
-    images: [`${B}/images/illu/01.png`],
+    images: [`${B}/images/illu/01.webp`],
   },
   {
     title: '繽紛風格插畫',
@@ -18,12 +18,12 @@ const projects = [
       { key: '主題', value: 'Our friends' },
       { key: '關鍵字', value: '貓貓狗狗、花朵、活潑、正向' },
     ],
-    images: [`${B}/images/illu/02.png`],
+    images: [`${B}/images/illu/02.webp`],
   },
   {
     title: '電繪與手繪素材',
     rows: [],
-    images: [`${B}/images/illu/03.png`],
+    images: [`${B}/images/illu/03.webp`],
   },
 ]
 

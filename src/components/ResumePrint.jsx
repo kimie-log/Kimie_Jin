@@ -33,7 +33,7 @@ function PrintContent() {
         <div id="resume-print" className={styles.wrap}>
             <header className={styles.header}>
                 <img
-                    src={`${B}/images/homepage/Headshot.jpg`}
+                    src={`${B}/images/homepage/Headshot.webp`}
                     alt="Kimie"
                     className={styles.headshot}
                 />

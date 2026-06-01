@@ -3,8 +3,8 @@ import { CATEGORIES } from '../data/categories';
 
 const NAV_ITEMS = [
   { label: 'About', id: 'about' },
-  { label: 'Projects', id: 'projects' },
   { label: 'Goals', id: 'goals' },
+  { label: 'Projects', id: 'projects' },
 ];
 
 export default function Navbar({ activeSection, isProjectsActive, onScrollTo }) {

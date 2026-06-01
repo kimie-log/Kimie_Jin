@@ -70,7 +70,7 @@ export default function HomeSection() {
                 className={styles.hero}
             >
                 <img
-                    src={`${B}/images/homepage/MainRemotion.gif`}
+                    src={`${B}/images/homepage/MainRemotion.webp`}
                     alt=''
                     className={styles.heroBg}
                 />
@@ -119,7 +119,7 @@ export default function HomeSection() {
                             <span className={styles.blockLabel}>Profile</span>
                             <div className={styles.blockProfileInner}>
                                 <img
-                                    src={`${B}/images/homepage/Headshot.jpg`}
+                                    src={`${B}/images/homepage/Headshot.webp`}
                                     alt='Kimie'
                                     className={styles.blockPhoto}
                                 />
@@ -168,7 +168,7 @@ export default function HomeSection() {
                                 {workCard.title}
                             </span>
                             <div className={styles.blockCols}>
-                                {workCard.cols.map(({ heading, lines }) => (
+                                {workCard.cols.map(({ heading, lines, tags }) => (
                                     <div
                                         key={heading}
                                         className={styles.blockColItem}
@@ -186,6 +186,13 @@ export default function HomeSection() {
                                                 {l}
                                             </span>
                                         ))}
+                                        {tags && (
+                                            <div className={styles.techTags}>
+                                                {tags.map((t) => (
+                                                    <span key={t} className={styles.techTag}>{t}</span>
+                                                ))}
+                                            </div>
+                                        )}
                                     </div>
                                 ))}
                             </div>
@@ -232,7 +239,7 @@ export default function HomeSection() {
                                 {projectsCard.title}
                             </span>
                             <div className={styles.blockCols}>
-                                {projectsCard.cols.map(({ heading, lines, video }) => (
+                                {projectsCard.cols.map(({ heading, lines, tags, video }) => (
                                     <div
                                         key={heading}
                                         className={styles.blockColItem}
@@ -250,6 +257,13 @@ export default function HomeSection() {
                                                 {l}
                                             </span>
                                         ))}
+                                        {tags && (
+                                            <div className={styles.techTags}>
+                                                {tags.map((t) => (
+                                                    <span key={t} className={styles.techTag}>{t}</span>
+                                                ))}
+                                            </div>
+                                        )}
                                         {video && (
                                             <iframe
                                                 className={styles.blockVideo}
@@ -266,6 +280,38 @@ export default function HomeSection() {
                     </div>
 
                     <SkillTagCloud />
+                </div>
+            </section>
+
+            {/* Goals */}
+            <section
+                id='goals'
+                className={styles.goals}
+            >
+                <div className={styles.goalsInner}>
+                    <h2 className={styles.sectionHeading}>Future Plan</h2>
+                    <div className={styles.future}>
+                        {FUTURE_PLAN.map(({ clsKey, title, items }) => (
+                            <div
+                                key={title}
+                                className={`${styles.futureCard} ${styles[clsKey]}`}
+                            >
+                                <h3>{title}</h3>
+                                <div className={styles.futureContent}>
+                                    {items.map(({ h, list }) => (
+                                        <div key={h}>
+                                            <h4>{h}</h4>
+                                            <ul>
+                                                {list.map((li) => (
+                                                    <li key={li}>{li}</li>
+                                                ))}
+                                            </ul>
+                                        </div>
+                                    ))}
+                                </div>
+                            </div>
+                        ))}
+                    </div>
                 </div>
             </section>
 
@@ -328,37 +374,6 @@ export default function HomeSection() {
                 />
             ))}
 
-            {/* Goals */}
-            <section
-                id='goals'
-                className={styles.goals}
-            >
-                <div className={styles.goalsInner}>
-                    <h2 className={styles.sectionHeading}>Future Plan</h2>
-                    <div className={styles.future}>
-                        {FUTURE_PLAN.map(({ clsKey, title, items }) => (
-                            <div
-                                key={title}
-                                className={`${styles.futureCard} ${styles[clsKey]}`}
-                            >
-                                <h3>{title}</h3>
-                                <div className={styles.futureContent}>
-                                    {items.map(({ h, list }) => (
-                                        <div key={h}>
-                                            <h4>{h}</h4>
-                                            <ul>
-                                                {list.map((li) => (
-                                                    <li key={li}>{li}</li>
-                                                ))}
-                                            </ul>
-                                        </div>
-                                    ))}
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
             <ResumePrint />
 
             {contactOpen && createPortal(
