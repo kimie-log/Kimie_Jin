@@ -59,7 +59,7 @@ export const SKILL_TAGS = [
         ],
     },
     {
-        category: '前端打包 & 測試',
+        category: '前端打包測試',
         color: '#ffffff',
         tags: ['Vite', 'Webpack', 'Jest', 'Cypress', 'Playwright'],
     },
