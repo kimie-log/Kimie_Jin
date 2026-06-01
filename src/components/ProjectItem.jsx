@@ -1,8 +1,29 @@
+import { useState, useEffect } from 'react';
+import { createPortal } from 'react-dom';
+import PropTypes from 'prop-types';
 import { useSlideIn } from './useSlideIn';
 import styles from '../sections/HomeSection.module.css';
 
+const projectShape = PropTypes.shape({
+  title: PropTypes.string,
+  subtitle: PropTypes.string,
+  note: PropTypes.string,
+  link: PropTypes.shape({ href: PropTypes.string, label: PropTypes.string }),
+  rows: PropTypes.arrayOf(PropTypes.shape({ key: PropTypes.string, value: PropTypes.string })),
+  images: PropTypes.arrayOf(PropTypes.string),
+});
+
 export default function ProjectItem({ project }) {
   const { ref, visible } = useSlideIn(false);
+  const [lightbox, setLightbox] = useState(null);
+
+  useEffect(() => {
+    if (!lightbox) return;
+    const onKey = (e) => { if (e.key === 'Escape') setLightbox(null); };
+    globalThis.addEventListener('keydown', onKey);
+    return () => globalThis.removeEventListener('keydown', onKey);
+  }, [lightbox]);
+
   return (
     <div ref={ref} className={`${styles.projectItem} ${visible ? styles.projectItemVisible : ''}`}>
       <div className={styles.projectInfoList}>
@@ -25,9 +46,23 @@ export default function ProjectItem({ project }) {
       </div>
       <div className={styles.projectImgArea}>
         {project.images.map((src) => (
-          <img key={src} src={src} alt={project.title} loading="lazy" />
+          <button key={src} className={styles.imgZoomBtn} onClick={() => setLightbox(src)}>
+            <img src={src} alt={project.title} loading="lazy" />
+          </button>
         ))}
       </div>
+
+      {lightbox && createPortal(
+        <>
+          <button className={styles.lightboxOverlay} onClick={() => setLightbox(null)} aria-label="關閉" />
+          <button className={styles.lightboxImgBtn} onClick={() => setLightbox(null)} aria-label="關閉圖片">
+            <img src={lightbox} className={styles.lightboxImg} alt="" />
+          </button>
+        </>,
+        document.body
+      )}
     </div>
   );
 }
+
+ProjectItem.propTypes = { project: projectShape };

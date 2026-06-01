@@ -137,7 +137,7 @@
     font-weight: 700;
     opacity: 0.5;
     white-space: nowrap;
-    width: 42pt;
+    width: 60pt;
     flex-shrink: 0;
   }
 
@@ -148,9 +148,25 @@
   }
 
   /* ── About ── */
+  .aboutHighlight {
+    font-size: 10pt;
+    font-weight: 700;
+    margin-bottom: 4pt;
+    letter-spacing: 0.03em;
+  }
+
   .aboutText {
     font-size: 8.5pt;
     line-height: 1.6;
     opacity: 0.75;
+    margin: 0;
   }
+
+  /* ── Entry tags ── */
+  .entryTags {
+    font-size: 7.5pt;
+    opacity: 0.5;
+    margin-top: 1pt;
+  }
+
 }

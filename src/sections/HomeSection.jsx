@@ -390,12 +390,18 @@ export default function HomeSection() {
                             aria-label="關閉"
                         >×</button>
                         <h3 id="contact-title" className={styles.contactTitle}>聯絡我</h3>
-                        <a href="mailto:kimie.log@gmail.com" className={styles.contactBtn}>
-                            <span className={styles.contactIcon}>✉</span>
+                        <a href="https://mail.google.com/mail/?view=cm&to=kimie.log@gmail.com" target="_blank" rel="noreferrer" className={styles.contactBtn}>
+                            <svg className={styles.contactIcon} width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                                <rect x="2" y="4.5" width="16" height="11" rx="2" stroke="currentColor" strokeWidth="1.4"/>
+                                <path d="M2 7.5l8 5.5 8-5.5" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"/>
+                                <path d="M2 15.5l5-4.5M18 15.5l-5-4.5" stroke="currentColor" strokeWidth="1.1" strokeLinecap="round" strokeOpacity="0.4"/>
+                            </svg>
                             <span>kimie.log@gmail.com</span>
                         </a>
                         <a href="tel:0907494064" className={styles.contactBtn}>
-                            <span className={styles.contactIcon}>📞</span>
+                            <svg className={styles.contactIcon} width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                                <path d="M5 3.5c.4-.4 1.1-.4 1.5 0l2 2c.4.4.4 1.1 0 1.5l-.8.8a.6.6 0 0 0-.05.8 10.5 10.5 0 0 0 3.75 3.75.6.6 0 0 0 .8-.05l.8-.8c.4-.4 1.1-.4 1.5 0l2 2c.4.4.4 1.1 0 1.5C15.6 16.4 14 17.5 12 16c-2.5-1.8-5-4.3-6.5-7C4 7 4.6 4.4 5 3.5z" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"/>
+                            </svg>
                             <span>0907-494-064</span>
                         </a>
                     </dialog>

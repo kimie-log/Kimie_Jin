@@ -1291,6 +1291,49 @@
 .contactBtn:hover { background: rgba(28, 37, 37, 0.05); }
 
 .contactIcon {
-  font-size: 1.1rem;
   flex-shrink: 0;
+  display: block;
+  color: var(--color-ink);
+}
+
+/* ── Image lightbox ── */
+.imgZoomBtn {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: zoom-in;
+  display: block;
+  width: 100%;
+}
+
+.lightboxOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.88);
+  z-index: 1000;
+  border: none;
+  padding: 0;
+  cursor: zoom-out;
+}
+
+.lightboxImgBtn {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1001;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: zoom-out;
+  max-width: 92vw;
+  max-height: 92vh;
+}
+
+.lightboxImg {
+  display: block;
+  max-width: 92vw;
+  max-height: 92vh;
+  object-fit: contain;
+  border-radius: var(--radius-md);
 }
