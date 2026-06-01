@@ -15,3 +15,32 @@ body {
 a {
   text-decoration: none;
 }
+
+:root {
+  /* ── Colors ── */
+  --color-ink: #1c2525;
+  --color-white: #ffffff;
+  --color-surface: #f4f4f4;
+  --color-divider: #f0f0f0;
+
+  /* ── Radii ── */
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-card: 16px;
+  --radius-lg: 20px;
+}
+
+@media print {
+  @page {
+    size: A4 portrait;
+    margin: 15mm 18mm;
+  }
+
+  #root {
+    display: none;
+  }
+
+  #resume-print {
+    display: block !important;
+  }
+}

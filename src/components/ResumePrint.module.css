@@ -1,0 +1,156 @@
+.wrap {
+  display: none;
+}
+
+@media print {
+  .wrap {
+    display: block;
+    font-family: 'Noto Sans TC', 'Roboto', sans-serif;
+    font-size: 9pt;
+    line-height: 1.5;
+    color: #111;
+    background: #fff;
+    padding: 0;
+    width: 100%;
+  }
+
+  /* ── Header ── */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 6pt;
+  }
+
+  .headshot {
+    width: 62pt;
+    height: 62pt;
+    object-fit: cover;
+    object-position: top center;
+    border-radius: 4pt;
+    flex-shrink: 0;
+  }
+
+  .name {
+    font-size: 22pt;
+    font-weight: 900;
+    letter-spacing: 0.02em;
+    line-height: 1;
+  }
+
+  .nameEn {
+    font-size: 14pt;
+    font-weight: 400;
+    opacity: 0.6;
+    margin-left: 6pt;
+  }
+
+  .role {
+    font-size: 10pt;
+    margin-top: 3pt;
+    opacity: 0.75;
+    letter-spacing: 0.04em;
+  }
+
+  .contact {
+    text-align: right;
+    font-size: 8.5pt;
+    line-height: 1.8;
+    opacity: 0.7;
+  }
+
+  .divider {
+    border: none;
+    border-top: 1.5pt solid #111;
+    margin: 6pt 0 10pt;
+  }
+
+  /* ── Body single-column ── */
+  .body {
+    display: block;
+  }
+
+  .left, .right {
+    width: 100%;
+  }
+
+  /* ── Section ── */
+  .section {
+    margin-bottom: 12pt;
+  }
+
+  .sectionTitle {
+    font-size: 7pt;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    opacity: 0.4;
+    border-bottom: 0.5pt solid #ccc;
+    padding-bottom: 2pt;
+    margin-bottom: 7pt;
+  }
+
+  /* ── Entry (work / project) ── */
+  .entry {
+    margin-bottom: 8pt;
+  }
+
+  .entryRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  .entryRole {
+    font-size: 9.5pt;
+    font-weight: 700;
+  }
+
+  .entryPeriod {
+    font-size: 7.5pt;
+    opacity: 0.55;
+    white-space: nowrap;
+    margin-left: 6pt;
+  }
+
+  .entryCompany {
+    font-size: 8pt;
+    opacity: 0.65;
+    margin-top: 1pt;
+  }
+
+  .entryTech {
+    font-size: 8pt;
+    opacity: 0.55;
+  }
+
+  /* ── Skill rows ── */
+  .skillRow {
+    display: flex;
+    gap: 6pt;
+    margin-bottom: 5pt;
+    align-items: baseline;
+  }
+
+  .skillLabel {
+    font-size: 7.5pt;
+    font-weight: 700;
+    opacity: 0.5;
+    white-space: nowrap;
+    width: 42pt;
+    flex-shrink: 0;
+  }
+
+  .skillText {
+    font-size: 8pt;
+    opacity: 0.75;
+    line-height: 1.5;
+  }
+
+  /* ── About ── */
+  .aboutText {
+    font-size: 8.5pt;
+    line-height: 1.6;
+    opacity: 0.75;
+  }
+}

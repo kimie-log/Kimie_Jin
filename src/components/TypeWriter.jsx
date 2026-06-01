@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import styles from './TypeWriter.module.css';
 
 const H1_TEXT = 'Kimie Jin';
-const P_TEXT = 'UI/UX & Web Designer & front-end Engineer';
+const P_TEXT = 'UI/UX Designer & Front-end Engineer';
 const H1_SPEED = 130;
 const P_SPEED = 60;
 const START_DELAY = 500;
@@ -43,7 +43,7 @@ export default function TypeWriter() {
             setH1Count(0);
             setPCount(0);
             setPhase('h1');
-        }, 5000);
+        }, 10000);
         return () => clearTimeout(t);
     }, [phase]);
 

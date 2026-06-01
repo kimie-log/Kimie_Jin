@@ -1,7 +1,6 @@
 import SubNavbar from '../components/SubNavbar'
 import { useSlideIn } from '../components/useSlideIn'
-import shared from './subpage.module.css'
-import styles from './LogoPage.module.css'
+import styles from './HomeSection.module.css'
 import B from '../utils/assetUrl'
 
 const projects = [
@@ -96,30 +95,24 @@ const projects = [
 function ProjectSlide({ project, index }) {
   const { ref, visible } = useSlideIn(index === 0)
   return (
-    <div ref={ref} className={`${shared.slide} ${visible ? shared.slideVisible : ''}`}>
-      <table className={shared.infoTable}>
-        <tbody>
-          <tr>
-            <th className={shared.projectTitle} style={{ whiteSpace: 'pre-line' }}>{project.title}</th>
-            <th />
-            <th>
-              {project.link && (
-                <a href={project.link.href} target="_blank" rel="noreferrer" className={shared.linkBtn}>
-                  {project.link.label}
-                </a>
-              )}
-            </th>
-          </tr>
-          {project.rows.map(({ key, value }) => (
-            <tr key={key}>
-              <td />
-              <td><strong>{key}</strong></td>
-              <td style={{ whiteSpace: 'pre-line' }}>{value}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
-      <div className={shared.imgArea}>
+    <div ref={ref} className={`${styles.subSlide} ${visible ? styles.subSlideVisible : ''}`}>
+      <div className={styles.subInfoList}>
+        <div className={styles.subProjectTitle}>
+          <span style={{ whiteSpace: 'pre-line' }}>{project.title}</span>
+          {project.link && (
+            <a href={project.link.href} target="_blank" rel="noreferrer" className={styles.subLinkBtn}>
+              {project.link.label}
+            </a>
+          )}
+        </div>
+        {project.rows.map(({ key, value }) => (
+          <div key={key} className={styles.subInfoRow}>
+            <span className={styles.subInfoKey}>{key}</span>
+            <span className={styles.subInfoVal}>{value}</span>
+          </div>
+        ))}
+      </div>
+      <div className={styles.subImgArea}>
         {project.images.map((src) => <img key={src} src={src} alt={project.title} loading="lazy" />)}
       </div>
     </div>
@@ -128,7 +121,7 @@ function ProjectSlide({ project, index }) {
 
 export default function LogoPage() {
   return (
-    <div className={`${shared.page} ${styles.page}`}>
+    <div className={`${styles.subPage} ${styles.pageLogo}`}>
       <SubNavbar bgColor="#313131" activeLinkColor="#ffffff" />
       {projects.map((project, i) => (
         <ProjectSlide key={i} project={project} index={i} />

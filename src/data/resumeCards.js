@@ -5,56 +5,55 @@ export const RESUME_CARDS = [
             { type: 'pic' },
             {
                 type: 'single',
-                sizeClass: 'w230',
+                flex: 1.5,
                 title: 'Personal Information',
                 hoverBg: '#a1f0e6',
                 highlight: '金思緯',
                 afterHighlight: ' Kimie',
                 lines: [
-                    '台北商業大學 資訊管理系 二技',
-                    '2001.09.14 (24歲)',
+                    '全端工程師',
+                    '國立臺北商業大學 資管系 二技',
                     '0907 - 494 - 064',
                     'kimie.log@gmail.com',
                 ],
             },
             {
                 type: 'work',
-                sizeClass: 'w730',
+                flex: 4,
                 title: 'Work Experience',
                 hoverBg: '#a1f0c3',
                 cols: [
                     {
                         heading: '全端工程師',
                         lines: [
-                            '二一零零科技股份有限公司',
+                            '二一零零科技',
                             '2026/03 ~ 2026/06',
+                            'Python / C# / Docker',
                         ],
                     },
                     {
                         heading: '全端工程師',
                         lines: [
-                            '台灣娜珂黛肌美容事業有限公司',
+                            '台灣娜珂黛肌美容事業',
                             '2025/01 ~ 2025/07',
+                            '自動化系統 / GCP',
                         ],
                     },
                     {
                         heading: '網頁設計師',
                         lines: [
-                            '台灣娜珂黛肌美容事業有限公司',
+                            '台灣娜珂黛肌美容事業',
                             '2024/08 ~ 2024/12',
+                            'HTML / CSS / JS / RWD',
                         ],
                     },
                     {
                         heading: '設計實習生',
-                        lines: ['TVBS 動畫設計組', '2023/02 ~ 2024/05'],
-                    },
-                    {
-                        heading: '社群美編',
-                        lines: ['極酷衝浪俱樂部', '2020/07 ~ 2023/07'],
-                    },
-                    {
-                        heading: 'NFT設計師',
-                        lines: ['Clown skull', '2022/01 ~ 2022/06'],
+                        lines: [
+                            'TVBS 動畫設計組',
+                            '2023/02 ~ 2024/05',
+                            '每日新聞圖卡、CG 製作',
+                        ],
                     },
                 ],
             },
@@ -65,49 +64,15 @@ export const RESUME_CARDS = [
         cards: [
             {
                 type: 'single',
-                sizeClass: 'w400',
+                flex: 2,
                 title: 'About Me',
                 hoverBg: '#f0eca1',
-                highlight: '自我介紹',
+                highlight: '全端工程師',
                 lines: [
-                    '我是思緯來自台東大武',
-                    '目前已累積三年設計經驗',
-                    '熟悉視覺設計的流程與跨部門溝通',
-                    '期望以我在網站視覺設計與基礎資訊架構能力之上',
-                    '掌握公司工作，並獨立執行網站設計作業',
-                ],
-            },
-            {
-                type: 'work',
-                sizeClass: 'w800',
-                title: 'Hard Skills',
-                hoverBg: '#f0c3a1',
-                cols: [
-                    {
-                        heading: '設計',
-                        lines: [
-                            'Adobe系列軟體',
-                            '(AI/PS/AE/Pr/XD)',
-                            'Figma',
-                            'WordPress',
-                        ],
-                    },
-                    {
-                        heading: '企劃',
-                        lines: [
-                            '行銷企劃案撰寫',
-                            '網頁規格、視覺規劃書',
-                            '影片腳本撰寫、企劃發想',
-                        ],
-                    },
-                    {
-                        heading: '程式設計',
-                        lines: [
-                            'HTML、RWD',
-                            'CSS (SCSS/SASS)、Bootstrap',
-                            'Javascript、jQuery',
-                        ],
-                    },
+                    '前後端 · AI 整合 · 雲端部署',
+                    '具備完整全端實務開發經驗',
+                    '設計 × 工程雙背景，重視產品思維',
+                    '自主開發 + 遠端跨國非同步協作',
                 ],
             },
         ],
@@ -117,35 +82,59 @@ export const RESUME_CARDS = [
         cards: [
             {
                 type: 'work',
-                sizeClass: 'w800',
+                flex: 1,
                 title: 'Soft Skills',
                 hoverBg: '#fbb5b5',
                 cols: [
                     {
-                        heading: '行動能力',
+                        heading: '行動力',
                         lines: [
-                            '考取餐飲證照3張',
-                            '設計接案10件以上',
-                            '自學設計到企業實習',
-                            '自學網頁、架設',
+                            'ITS Python 程式語言認證',
+                            '產業新尖兵 數據分析班',
+                            '自主完成多項全端專案',
+                            '設計接案 10 件以上',
                         ],
                     },
                     {
-                        heading: '領導能力',
+                        heading: '跨域整合',
                         lines: [
-                            '成果展美宣總長',
-                            '系學會、社團美宣長',
-                            '志工及返鄉服務美宣組長',
-                            '小組行銷企劃組長兼報告',
+                            '設計 × 工程 雙背景',
+                            'UI/UX 與系統架構兼顧',
+                            '從需求到上線獨立執行',
+                            'MLOps / DevOps 實務基礎',
                         ],
                     },
                     {
-                        heading: '溝通能力',
+                        heading: '協作溝通',
                         lines: [
-                            '能獨立作業溝通設計稿',
-                            'TVBS部門間設計稿溝通順暢',
-                            '在兩小時內做出三張以上資訊圖表',
+                            '遠端非同步跨國協作',
+                            '跨部門需求確認溝通',
+                            '清楚文件與版控習慣',
+                            '曾任多組別美宣組長',
                         ],
+                    },
+                ],
+            },
+        ],
+    },
+    {
+        row: 4,
+        cards: [
+            {
+                type: 'work',
+                flex: 1,
+                title: 'Projects',
+                hoverBg: '#b8a1f0',
+                cols: [
+                    {
+                        heading: '葉片病害 AI 系統',
+                        lines: [
+                            '2025/11 ~ 2025/12',
+                            'CNN + YOLO 兩階段影像辨識',
+                            'React + TypeScript / FastAPI',
+                            'Docker + Cloudinary + Logging',
+                        ],
+                        video: 'https://www.youtube.com/embed/QnfldeAKmGE',
                     },
                 ],
             },

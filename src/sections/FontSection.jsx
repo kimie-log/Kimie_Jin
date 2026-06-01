@@ -1,7 +1,6 @@
 import SubNavbar from '../components/SubNavbar'
 import { useSlideIn } from '../components/useSlideIn'
-import shared from './subpage.module.css'
-import styles from './FontPage.module.css'
+import styles from './HomeSection.module.css'
 import B from '../utils/assetUrl'
 
 const projects = [
@@ -14,21 +13,19 @@ const projects = [
 function ProjectSlide({ project, index }) {
   const { ref, visible } = useSlideIn(index === 0)
   return (
-    <div ref={ref} className={`${shared.slide} ${visible ? shared.slideVisible : ''}`}>
-      <table className={shared.infoTable}>
-        <tbody>
-          <tr>
-            <th className={shared.projectTitle}>{project.title}</th>
-            <th /><th />
-          </tr>
-          {project.rows.map(({ key, value }) => (
-            <tr key={key}>
-              <td /><td><strong>{key}</strong></td><td>{value}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
-      <div className={shared.imgArea}>
+    <div ref={ref} className={`${styles.subSlide} ${visible ? styles.subSlideVisible : ''}`}>
+      <div className={styles.subInfoList}>
+        <div className={styles.subProjectTitle}>
+          <span>{project.title}</span>
+        </div>
+        {project.rows.map(({ key, value }) => (
+          <div key={key} className={styles.subInfoRow}>
+            <span className={styles.subInfoKey}>{key}</span>
+            <span className={styles.subInfoVal}>{value}</span>
+          </div>
+        ))}
+      </div>
+      <div className={styles.subImgArea}>
         {project.images.map((src) => <img key={src} src={src} alt={project.title} loading="lazy" />)}
       </div>
     </div>
@@ -37,7 +34,7 @@ function ProjectSlide({ project, index }) {
 
 export default function FontPage() {
   return (
-    <div className={`${shared.page} ${styles.page}`}>
+    <div className={`${styles.subPage} ${styles.pageFont}`}>
       <SubNavbar bgColor="#c84605" activeLinkColor="#ffffff" />
       {projects.map((project, i) => (
         <ProjectSlide key={i} project={project} index={i} />

@@ -1,0 +1,81 @@
+export const SKILL_TAGS = [
+    {
+        category: '設計工具',
+        color: '#f0a1c8',
+        tags: [
+            'Figma',
+            'Illustrator',
+            'Photoshop',
+            'Remotion',
+            'hyperframes',
+            'Adove Premiere',
+        ],
+    },
+    {
+        category: '前端測試工具',
+        color: '#fbb5b5',
+        tags: ['Webpack', 'Vite', 'Cypress', 'Jest', 'Playwright'],
+    },
+    {
+        category: '前端',
+        color: '#a1d8f0',
+        tags: [
+            'React',
+            'TypeScript',
+            'JavaScript',
+            'jQuery',
+            'HTML',
+            'CSS / SCSS',
+            'Tailwind CSS',
+            'RWD',
+        ],
+    },
+    {
+        category: '後端',
+        color: '#a1f0c3',
+        tags: [
+            'Python',
+            'Node.js',
+            'Django',
+            'Flask',
+            'FastAPI',
+            'RESTful API',
+        ],
+    },
+
+    {
+        category: '資料 & AI',
+        color: '#c3a1f0',
+        tags: [
+            'Pandas',
+            'NumPy',
+            'scikit-learn',
+            'PyTorch',
+            'TensorFlow',
+            'YOLO',
+            'CNN',
+            'XGBoost',
+            'LightGBM',
+            'ETL Pipeline',
+            'MLOps',
+        ],
+    },
+    {
+        category: '資料庫',
+        color: '#f0c3a1',
+        tags: ['PostgreSQL', 'MySQL', 'BigQuery', 'MSSQL'],
+    },
+    {
+        category: '部署 & 雲端',
+        color: '#f0eca1',
+        tags: [
+            'Docker',
+            'Docker Compose',
+            'GCP',
+            'Azure',
+            'Git',
+            'CI/CD',
+            'Logging',
+        ],
+    },
+];

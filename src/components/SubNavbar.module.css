@@ -13,7 +13,7 @@
 .brand {
   font-size: 1.2rem;
   font-weight: 900;
-  color: #ffffff;
+  color: var(--color-white);
   letter-spacing: 0.05em;
   padding: 10px 0;
   white-space: nowrap;
@@ -34,13 +34,13 @@
   display: block;
   padding: 10px 0;
   font-size: 1.1rem;
-  color: #f4f4f4;
+  color: var(--color-surface);
   white-space: nowrap;
   transition: color 0.3s, font-weight 0.3s;
 }
 
 .link:hover {
-  color: #ffffff;
+  color: var(--color-white);
   font-weight: 700;
 }
 
