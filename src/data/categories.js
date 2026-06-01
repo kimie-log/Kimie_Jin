@@ -309,6 +309,44 @@ export const CATEGORIES = [
                 images: [`${B}/images/graphic_design/01.webp`],
             },
             {
+                title: 'EDM設計',
+                rows: [
+                    {
+                        key: '品牌電子報設計',
+                        value: '使用 benchmark email 製作 EDM，包含視覺設計與切版',
+                    },
+                ],
+                images: [
+                    `${B}/images/graphic_design/A-01.webp`,
+                    `${B}/images/graphic_design/A-02.webp`,
+                    `${B}/images/graphic_design/A-03.webp`,
+                    `${B}/images/graphic_design/A-04.webp`,
+                ],
+            },
+            {
+                title: '平面廣告設計',
+                rows: [
+                    {
+                        key: '品牌廣告設計',
+                        value: '依照轉換率較高的排版、顏色、文案設計',
+                    },
+                ],
+                images: [
+                    `${B}/images/graphic_design/B-01.webp`,
+                    `${B}/images/graphic_design/B-02.webp`,
+                    `${B}/images/graphic_design/C-01.webp`,
+                    `${B}/images/graphic_design/C-02.webp`,
+                    `${B}/images/graphic_design/C-03.webp`,
+                    `${B}/images/graphic_design/C-04.webp`,
+                    `${B}/images/graphic_design/C-05.webp`,
+                    `${B}/images/graphic_design/C-06.webp`,
+                    `${B}/images/graphic_design/C-07.webp`,
+                    `${B}/images/graphic_design/C-08.webp`,
+                    `${B}/images/graphic_design/C-09.webp`,
+                    `${B}/images/graphic_design/C-10.webp`,
+                ],
+            },
+            {
                 title: '書籍平面設計',
                 rows: [],
                 images: [`${B}/images/graphic_design/02.webp`],
@@ -331,24 +369,18 @@ export const CATEGORIES = [
         img2: `${B}/images/homepage/5-2.webp`,
         projects: [
             {
+                title: 'LOGO字體設計',
+                rows: [],
+                images: [
+                    `${B}/images/font/02.webp`,
+                    `${B}/images/font/03.webp`,
+                    `${B}/images/font/04.webp`,
+                ],
+            },
+            {
                 title: '活動海報字體設計',
                 rows: [],
                 images: [`${B}/images/font/01.webp`],
-            },
-            {
-                title: 'LOGO字體設計',
-                rows: [],
-                images: [`${B}/images/font/02.webp`],
-            },
-            {
-                title: '文創藝術字體設計',
-                rows: [],
-                images: [`${B}/images/font/03.webp`],
-            },
-            {
-                title: '貼文字體設計',
-                rows: [],
-                images: [`${B}/images/font/04.webp`],
             },
         ],
     },

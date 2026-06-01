@@ -804,6 +804,51 @@
   object-fit: contain;
 }
 
+/* ── Mosaic 2-col (3–5 images) ── */
+.imgGridTwo {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+}
+
+.imgGridTwo > .imgZoomBtn {
+  aspect-ratio: 4/3;
+  overflow: hidden;
+  border-radius: var(--radius-sm);
+}
+
+.imgGridTwo > .imgZoomBtn:last-child:nth-child(odd) {
+  grid-column: 1 / -1;
+  aspect-ratio: 16/5;
+}
+
+.imgGridTwo > .imgZoomBtn img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0;
+}
+
+/* ── Mosaic 3-col (6+ images) ── */
+.imgGridThree {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+
+.imgGridThree > .imgZoomBtn {
+  aspect-ratio: 4/3;
+  overflow: hidden;
+  border-radius: var(--radius-sm);
+}
+
+.imgGridThree > .imgZoomBtn img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0;
+}
+
 /* ═══════════════════════════════════════════════════════
    Goals (Future Plan)
 ═══════════════════════════════════════════════════════ */
@@ -1053,6 +1098,7 @@
   .projectInfoTitle { font-size: 1.2rem; }
 
   .projectImgArea img { flex: 1 1 100%; }
+  .imgGridThree { grid-template-columns: repeat(2, 1fr); }
 
   /* ── Goals ── */
   .goals { padding: 72px var(--h-pad) 48px; }
@@ -1309,31 +1355,75 @@
 .lightboxOverlay {
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.88);
+  background: rgba(0, 0, 0, 0.9);
   z-index: 1000;
   border: none;
   padding: 0;
   cursor: zoom-out;
 }
 
-.lightboxImgBtn {
+.lightboxImg {
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1001;
-  background: none;
-  border: none;
-  padding: 0;
-  cursor: zoom-out;
-  max-width: 92vw;
-  max-height: 92vh;
-}
-
-.lightboxImg {
   display: block;
-  max-width: 92vw;
-  max-height: 92vh;
+  max-width: 88vw;
+  max-height: 88vh;
   object-fit: contain;
   border-radius: var(--radius-md);
+  pointer-events: none;
+}
+
+.lightboxClose {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1002;
+  width: 40px;
+  height: 40px;
+  background: rgba(0, 0, 0, 0.45);
+  border: none;
+  border-radius: 50%;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.15s;
+}
+.lightboxClose:hover { background: rgba(0, 0, 0, 0.65); }
+
+.lightboxNav {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1002;
+  width: 48px;
+  height: 48px;
+  background: rgba(0, 0, 0, 0.45);
+  border: none;
+  border-radius: 50%;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.15s;
+}
+.lightboxNav:hover { background: rgba(0, 0, 0, 0.65); }
+.lightboxNavPrev { left: 20px; }
+.lightboxNavNext { right: 20px; }
+
+.lightboxCount {
+  position: fixed;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1002;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.85rem;
+  letter-spacing: 0.06em;
+  pointer-events: none;
 }
